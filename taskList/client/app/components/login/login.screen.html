@@ -1,0 +1,11 @@
+<form class="well">
+    <div class="form-group">
+
+        <input type="text" class="form-control" placeholder="UserName" name="username" id="username"  [(ngModel)]="username">
+        <input type="password" class="form-control" placeholder="password" name="password" id="password"  [(ngModel)]="password" >
+
+    </div>
+      <div class="col-md-4">
+        <input type="button"  (click)="authentication(username,password)" class="btn btn-submit" value="Submit" >
+    </div>
+</form>
